@@ -20,6 +20,7 @@ makeCacheMatrix<-function(x= matrix()){
   # This is the set function for original matrix
   set <- function(y){
     x<<-y
+    inverse <<- NULL
   }
   # This is the get function to get the value of matrix from environment
   get<- function() x
